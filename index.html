@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <title>Profile</title>
+  </head>
+  <body>
+      <!--NAVBAR-->
+      <nav>
+        <div class="Left">
+           <h2 href="/"> Zidan Catur Wibowo</h2>
+        </div>
+        <div class="Right">
+            <a href="http://github.com/Zidan-ob1" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
+
+            <a href="http://linkedin.com/in/zidan-catur-wibowo-239099288/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LInkedin</span>
+            </a>
+
+            <a href="mailto:zidanewibowo08@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!--SECTION 1: HERO-->
+        <section class="hero-section">
+            <div class="text">
+                <h2>Hi, I'm Zidan</h2>
+                <p>My name Zidan Catur Wibowo Information systems students who are still developing to 
+                  become professional frontend developers. a frontend developer who is in the process of learning and developing skills. With high enthusiasm, 
+                  I continue to dig deeper into frontend development. This is just a simple portfolio, I hope you enjoy it.
+                <div class="links">
+                  <a href="#skills">
+                     <i class="fa-solid fa-code"></i>
+                    <span>Skills</span>   
+                  </a>
+ 
+
+                 <a href="#contact">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Contact</span>
+                 </a>
+
+
+                </div>
+            </div>
+            <div class="headshot hidden">
+                <img src="/src/assets/face2.jpg" alt="zidan face" width="500px">
+            </div>
+        </section>
+
+        <!--SECTION 2: SKILLS-->
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+              I am actively learning and developing skills in frontend development. 
+              Currently, I have mastered the basics of HTML and CSS. 
+              In addition, I am also studying javascript, reactjs, figma and so on related to frontend development. 
+              I am very excited to continue learning and honing my skills in building attractive and interactive user interfaces.
+            </div>
+
+            <div class="cells">
+                <div class="cell">
+                    <img width="96" height="96" 
+                        src="https://img.icons8.com/color/144/html-5--v1.png" 
+                        alt="html logo"/>
+                    <span>HTML</span>
+                </div>
+
+                <div class="cell">
+                    <img width="96" height="96" 
+                    src="https://img.icons8.com/color/96/css3.png" 
+                    alt="css logo"/>
+                    <span>CSS</span>
+                </div>
+            </div>
+        </section> 
+
+
+          <!--SECTION 1: Contact-->
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+
+            <div class="group">
+                <div class="text">
+                  Have an interesting project or want to discuss web development? I am open to new opportunities.
+                </div>
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
